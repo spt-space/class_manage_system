@@ -1,0 +1,358 @@
+{
+    "chinese": {
+        "name": "语文",
+        "color": "#e74c3c",
+        "folders": [
+            {
+                "name": "古诗词",
+                "icon": "fas fa-scroll",
+                "items": [
+                    {
+                        "id": "chinese-poem-1",
+                        "title": "《静夜思》赏析",
+                        "content": "李白《静夜思》是唐代五言绝句的代表作，通过描绘月夜思乡之情，表达了游子对故乡的深深思念。这首诗语言简练，意境深远，是李白诗歌中的经典之作。"
+                    },
+                    {
+                        "id": "chinese-poem-2",
+                        "title": "《春晓》解读",
+                        "content": "孟浩然《春晓》以春晨为背景，通过鸟鸣、风雨、落花等意象，抒发了对春天的热爱和珍惜之情。诗歌语言清新自然，富有生活气息。"
+                    },
+                    {
+                        "id": "chinese-poem-3",
+                        "title": "宋词特点",
+                        "content": "宋词是宋代文学的代表，分为婉约派和豪放派。婉约派以柳永、李清照为代表，风格柔美婉约；豪放派以苏轼、辛弃疾为代表，风格豪迈奔放。"
+                    }
+                ]
+            }
+        ]
+    },
+    "math": {
+        "name": "数学",
+        "color": "#3498db",
+        "folders": [
+            {
+                "name": "第23章 四边形",
+                "icon": "fas fa-shapes",
+                "items": [
+                    {
+                        "name": "23.1 多边形",
+                        "icon": "fas fa-draw-polygon",
+                        "items": [
+                            {
+                                "id": "math",
+                                "title": "多边形的定义",
+                                "content": "<p>多边形是由三条或三条以上的线段首尾顺次连接所组成的封闭图形</p><p>根据边数不同,多边形可分为三角形,四边形,五边形等</p>"
+                            },
+                            {
+                                "id": "math",
+                                "title": "多边形的内角和",
+                                "content": "<p>n边形的内角和公式为$(n-2)×180°(n≥2)$</p><p>例如,三角形的内角和为$180°$,四边形的内角和为$360°$</p>"
+                            },
+                            {
+                                "id": "math",
+                                "title": "多边形的外角和",
+                                "content": "无论是怎样的多边形,其外角和都为$360°$"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "23.2 平行四边形",
+                        "icon": "fas fa-square",
+                        "items": [
+                            {
+                                "id": "math",
+                                "title": "平行四边形的性质",
+                                "content": "平行四边形的对边平行且相等，对角相等，邻角互补，对角线互相平分。这些性质是解决平行四边形问题的基础。"
+                            },
+                            {
+                                "id": "math",
+                                "title": "平行四边形的判定",
+                                "content": "判定一个四边形是平行四边形的方法：1.两组对边分别平行；2.两组对边分别相等；3.一组对边平行且相等；4.对角线互相平分。"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "23.3 矩形,菱形,正方形",
+                        "icon": "fas fa-square",
+                        "items": [
+                            {
+                                "id": "math",
+                                "title": "平行四边形的性质",
+                                "content": "平行四边形的对边平行且相等，对角相等，邻角互补，对角线互相平分。这些性质是解决平行四边形问题的基础。"
+                            },
+                            {
+                                "id": "math",
+                                "title": "平行四边形的判定",
+                                "content": "判定一个四边形是平行四边形的方法：1.两组对边分别平行；2.两组对边分别相等；3.一组对边平行且相等；4.对角线互相平分。"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "23.4 三角形的中位线与重心",
+                        "icon": "fas fa-square",
+                        "items": [
+                            {
+                                "id": "math",
+                                "title": "平行四边形的性质",
+                                "content": "平行四边形的对边平行且相等，对角相等，邻角互补，对角线互相平分。这些性质是解决平行四边形问题的基础。"
+                            },
+                            {
+                                "id": "math",
+                                "title": "平行四边形的判定",
+                                "content": "判定一个四边形是平行四边形的方法：1.两组对边分别平行；2.两组对边分别相等；3.一组对边平行且相等；4.对角线互相平分。"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "第24章 平面直角坐标系",
+                "icon": "fas fa-map-marked-alt",
+                "items": [
+                    {
+                        "id": "math-24-1",
+                        "title": "坐标系的建立",
+                        "content": "平面直角坐标系由两条互相垂直、原点重合的数轴组成。水平方向的数轴称为x轴，垂直方向的数轴称为y轴。"
+                    },
+                    {
+                        "id": "math-24-2",
+                        "title": "点的坐标",
+                        "content": "平面内任意一点P的位置可以用有序实数对(x,y)来表示，其中x是点P到y轴的距离，y是点P到x轴的距离。"
+                    },
+                    {
+                        "name": "函数图像",
+                        "icon": "fas fa-chart-line",
+                        "items": [
+                            {
+                                "id": "math-24-3-1",
+                                "title": "一次函数图像",
+                                "content": "一次函数y=kx+b的图像是一条直线。k是斜率，表示直线的倾斜程度；b是截距，表示直线与y轴交点的纵坐标。"
+                            },
+                            {
+                                "id": "math-24-3-2",
+                                "title": "二次函数图像",
+                                "content": "二次函数y=ax²+bx+c的图像是一条抛物线。a决定抛物线的开口方向和大小，顶点坐标可通过公式计算。<iframe src=\"https://function-spt-space.pages.dev/?key=x^2&points=0,0,A,ff0000,false;&titleHeight=30&title=y=x^2\" width=\"300\" height=\"300\"></iframe>"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "概率与统计",
+                "icon": "fas fa-chart-bar",
+                "items": [
+                    {
+                        "id": "math-prob-1",
+                        "title": "概率计算",
+                        "content": "概率P(A)=事件A发生的次数/所有可能结果的次数。互斥事件的概率加法公式为P(A∪B)=P(A)+P(B)。"
+                    },
+                    {
+                        "id": "math-prob-2",
+                        "title": "统计图表",
+                        "content": "常见的统计图表包括条形图、折线图、扇形图、直方图等。条形图适合比较数量，折线图适合表示变化趋势。"
+                    }
+                ]
+            }
+        ]
+    },
+    "english": {
+        "name": "英语",
+        "color": "#2ecc71",
+        "folders": [
+            {
+                "name": "语法",
+                "icon": "fas fa-spell-check",
+                "items": [
+                    {
+                        "id": "english-grammar-1",
+                        "title": "时态",
+                        "content": "英语有12种时态，最常用的有：一般现在时、现在进行时、一般过去时、现在完成时、一般将来时等。每种时态有特定的结构和用法。"
+                    },
+                    {
+                        "id": "english-grammar-2",
+                        "title": "条件句",
+                        "content": "条件句分为零条件句、第一条件句、第二条件句和第三条件句，分别表示不同的条件和结果关系。"
+                    }
+                ]
+            },
+            {
+                "name": "词汇",
+                "icon": "fas fa-book",
+                "items": [
+                    {
+                        "id": "english-vocabulary-1",
+                        "title": "词根词缀",
+                        "content": "英语单词由词根、前缀和后缀组成。了解常见词根词缀有助于扩大词汇量，例如un-表示否定，-able表示能够。"
+                    },
+                    {
+                        "id": "english-vocabulary-2",
+                        "title": "同义词辨析",
+                        "content": "英语中有许多近义词，如big/large, small/little, begin/start等。它们有时可以互换，但有时有细微差别。"
+                    }
+                ]
+            },
+            {
+                "name": "写作",
+                "icon": "fas fa-edit",
+                "items": [
+                    {
+                        "id": "english-writing-1",
+                        "title": "书信格式",
+                        "content": "英语书信包括日期、称呼、正文、结束语和签名。正式书信和 informal书信的格式和用语有所不同。"
+                    },
+                    {
+                        "id": "english-writing-2",
+                        "title": "议论文结构",
+                        "content": "英语议论文通常包括引言、主体段落和结论。主体段落应有主题句、支持句和结论句。"
+                    }
+                ]
+            }
+        ]
+    },
+    "physics": {
+        "name": "物理",
+        "color": "#9b59b6",
+        "folders": [
+            {
+                "name": "力学",
+                "icon": "fas fa-weight-hanging",
+                "items": [
+                    {
+                        "id": "physics-mechanics-1",
+                        "title": "牛顿三定律",
+                        "content": "第一定律：物体保持静止或匀速直线运动，除非受到外力作用。第二定律：F=ma。第三定律：作用力与反作用力大小相等，方向相反。"
+                    },
+                    {
+                        "id": "physics-mechanics-2",
+                        "title": "能量守恒",
+                        "content": "能量既不会凭空产生，也不会凭空消失，只会从一种形式转化为另一种形式，或者从一个物体转移到其他物体。"
+                    }
+                ]
+            },
+            {
+                "name": "电磁学",
+                "icon": "fas fa-bolt",
+                "items": [
+                    {
+                        "id": "physics-electro-1",
+                        "title": "欧姆定律",
+                        "content": "导体中的电流与导体两端的电压成正比，与导体的电阻成反比。公式为I=U/R。"
+                    },
+                    {
+                        "id": "physics-electro-2",
+                        "title": "电磁感应",
+                        "content": "当导体在磁场中运动切割磁感线时，导体中会产生感应电动势。法拉第电磁感应定律是电磁学的基本定律之一。"
+                    }
+                ]
+            },
+            {
+                "name": "光学",
+                "icon": "fas fa-lightbulb",
+                "items": [
+                    {
+                        "id": "physics-optics-1",
+                        "title": "光的反射",
+                        "content": "光的反射定律：入射光线、反射光线和法线在同一平面内，入射角等于反射角。"
+                    },
+                    {
+                        "id": "physics-optics-2",
+                        "title": "光的折射",
+                        "content": "光从一种介质斜射入另一种介质时，传播方向发生改变。折射定律由斯涅尔定律描述：n₁sinθ₁=n₂sinθ₂。"
+                    }
+                ]
+            }
+        ]
+    },
+    "chemistry": {
+        "name": "化学",
+        "color": "#e67e22",
+        "folders": [
+            {
+                "name": "无机化学",
+                "icon": "fas fa-atom",
+                "items": [
+                    {
+                        "id": "chemistry-inorganic-1",
+                        "title": "元素周期表",
+                        "content": "元素周期表按照原子序数排列，分为周期和族。元素性质随原子序数增加呈现周期性变化。"
+                    },
+                    {
+                        "id": "chemistry-inorganic-2",
+                        "title": "化学键",
+                        "content": "化学键包括离子键、共价键和金属键。离子键由电子转移形成，共价键由电子共享形成。"
+                    }
+                ]
+            },
+            {
+                "name": "有机化学",
+                "icon": "fas fa-vial",
+                "items": [
+                    {
+                        "id": "chemistry-organic-1",
+                        "title": "烃类",
+                        "content": "只含碳氢两种元素的化合物称为烃。根据结构可分为烷烃、烯烃、炔烃和芳香烃。"
+                    },
+                    {
+                        "id": "chemistry-organic-2",
+                        "title": "官能团",
+                        "content": "决定有机化合物化学特性的原子或原子团称为官能团，如羟基(-OH)、羧基(-COOH)、氨基(-NH₂)等。"
+                    }
+                ]
+            },
+            {
+                "name": "化学反应",
+                "icon": "fas fa-vial",
+                "items": [
+                    {
+                        "id": "chemistry-reaction-1",
+                        "title": "氧化还原反应",
+                        "content": "有电子转移的化学反应称为氧化还原反应。失去电子的过程是氧化，得到电子的过程是还原。"
+                    },
+                    {
+                        "id": "chemistry-reaction-2",
+                        "title": "化学平衡",
+                        "content": "可逆反应中，正反应速率等于逆反应速率时，体系达到化学平衡。平衡常数K表示平衡时各物质浓度关系。"
+                    }
+                ]
+            }
+        ]
+    },
+    "web": {
+        "name": "系统相关",
+        "color": "#2c3e50",
+        "folders": [
+            {
+                "name": "使用说明",
+                "icon": "fas fa-info-circle",
+                "items": [
+                    {
+                        "id": "web-guide-1",
+                        "title": "基本操作",
+                        "content": "1. 在首页选择科目进入知识点页面<br>2. 左侧目录可折叠展开<br>3. 点击知识点可在右侧查看内容<br>4. 使用左上角按钮控制目录显示和全屏模式"
+                    },
+                    {
+                        "id": "web-guide-2",
+                        "title": "设备适配",
+                        "content": "本网页适配不同设备：<br>• 电脑/平板：左侧目录，右侧内容<br>• 手机：目录全屏显示，点击知识点后自动隐藏"
+                    }
+                ]
+            },
+            {
+                "name": "技术信息",
+                "icon": "fas fa-code",
+                "items": [
+                    {
+                        "id": "web-tech-1",
+                        "title": "实现技术",
+                        "content": "本网页使用HTML5、CSS3和原生JavaScript实现，响应式设计，无外部框架依赖。"
+                    },
+                    {
+                        "id": "web-tech-2",
+                        "title": "功能特点",
+                        "content": "1. 科目切换动画效果<br>2. 目录可折叠展开<br>3. 响应式布局适配多设备<br>4. 知识点内容独立滚动"
+                    }
+                ]
+            }
+        ]
+    }
+}
