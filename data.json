@@ -1,0 +1,950 @@
+{
+    "classes": [
+        "test1",
+        "test2"
+    ],
+    "students": {
+        "test1": [
+            {
+                "id": "1777794609399",
+                "name": "name1",
+                "gender": "男",
+                "studentId": "1"
+            },
+            {
+                "id": "1777794620048",
+                "name": "name2",
+                "gender": "男",
+                "studentId": "2"
+            },
+            {
+                "id": "1777794625892",
+                "name": "name3",
+                "gender": "男",
+                "studentId": "3"
+            },
+            {
+                "id": "1777794631606",
+                "name": "name4",
+                "gender": "男",
+                "studentId": "4"
+            },
+            {
+                "id": "1777794637404",
+                "name": "name5",
+                "gender": "男",
+                "studentId": "5"
+            },
+            {
+                "id": "1777875639554",
+                "name": "我是谁",
+                "gender": "男",
+                "studentId": "？"
+            }
+        ],
+        "test2": [
+            {
+                "id": "1777809401025",
+                "name": "peter",
+                "gender": "男",
+                "studentId": "1"
+            },
+            {
+                "id": "1777809429975",
+                "name": "mary",
+                "gender": "女",
+                "studentId": "2"
+            },
+            {
+                "id": "1777809446295",
+                "name": "jam",
+                "gender": "男",
+                "studentId": "3"
+            },
+            {
+                "id": "1777809469688",
+                "name": "Wang Yiming",
+                "gender": "男",
+                "studentId": "4"
+            }
+        ]
+    },
+    "driftBottles": {
+        "test1": [
+            {
+                "id": "1777794652172",
+                "owner": "name2",
+                "item": "item 1",
+                "date": "2026-05-03T15:50",
+                "received": false,
+                "receiver": "",
+                "receiveDate": ""
+            },
+            {
+                "id": "1777794660932",
+                "owner": "name3",
+                "item": "item 2",
+                "date": "2026-05-03T15:50",
+                "received": true,
+                "receiver": "name1",
+                "receiveDate": "2026-05-03T15:51"
+            },
+            {
+                "id": "1777875621308",
+                "owner": "name1",
+                "item": "不知道",
+                "date": "2026-05-04T14:20",
+                "received": true,
+                "receiver": "我是谁",
+                "receiveDate": "2026-05-04T14:20"
+            }
+        ],
+        "test2": []
+    },
+    "timeCapsules": {
+        "test1": [
+            {
+                "id": "1777905979173",
+                "name": "name1",
+                "mood": "开心",
+                "text": "2",
+                "date": "2026-05-04T14:46:19.173Z"
+            },
+            {
+                "id": "1777905990935",
+                "name": "name1",
+                "mood": "平静",
+                "text": "12",
+                "date": "2026-05-04T14:46:30.935Z"
+            },
+            {
+                "id": "1777906008357",
+                "name": "name3",
+                "mood": "难过",
+                "text": "13",
+                "date": "2026-05-04T14:46:48.357Z"
+            }
+        ],
+        "test2": []
+    },
+    "errorBanks": {
+        "test1": [
+            {
+                "id": "1777810625773",
+                "subject": "数学",
+                "date": "2026-05-03",
+                "question": "$$x^2$$",
+                "analysis": "11111",
+                "questionImage": "",
+                "answerImage": ""
+            },
+            {
+                "id": "1777811475106",
+                "subject": "语文",
+                "date": "2026-05-03",
+                "question": "12345",
+                "analysis": "none",
+                "answerImage": ""
+            },
+            {
+                "id": "1777820676065",
+                "subject": "数学",
+                "date": "2026-05-03",
+                "question": "$\n\\lim_{n→\\infty}\n\\sum_{i=1}^{n}\n{\n\\frac{\\sqrt[4]{2}}{n}\n\\times\n(\\frac{\\sqrt[4]{2} \\times i}{n})^3\n\\times\n(\n\\lim_{x→0}\n\\frac{sin\\text{ }x}{x}\n)\n} $",
+                "analysis": "1/2",
+                "questionImage": "",
+                "answerImage": ""
+            }
+        ],
+        "test2": []
+    },
+    "dutyRosters": {
+        "test1": {
+            "positions": [
+                {
+                    "name": "中午扫地",
+                    "count": 1
+                },
+                {
+                    "name": "晚上扫地",
+                    "count": 2
+                },
+                {
+                    "name": "擦黑板",
+                    "count": 1
+                },
+                {
+                    "name": "排桌椅",
+                    "count": 1
+                }
+            ],
+            "schedule": [
+                {
+                    "date": "2026-05-04",
+                    "assignments": [
+                        {
+                            "position": "中午扫地",
+                            "student": "name1"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name2"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name3"
+                        },
+                        {
+                            "position": "擦黑板",
+                            "student": "name4"
+                        },
+                        {
+                            "position": "排桌椅",
+                            "student": "name5"
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-05-05",
+                    "assignments": [
+                        {
+                            "position": "中午扫地",
+                            "student": "name1"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name2"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name3"
+                        },
+                        {
+                            "position": "擦黑板",
+                            "student": "name4"
+                        },
+                        {
+                            "position": "排桌椅",
+                            "student": "name5"
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-05-06",
+                    "assignments": [
+                        {
+                            "position": "中午扫地",
+                            "student": "name1"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name2"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name3"
+                        },
+                        {
+                            "position": "擦黑板",
+                            "student": "name4"
+                        },
+                        {
+                            "position": "排桌椅",
+                            "student": "name5"
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-05-07",
+                    "assignments": [
+                        {
+                            "position": "中午扫地",
+                            "student": "name1"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name2"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name3"
+                        },
+                        {
+                            "position": "擦黑板",
+                            "student": "name4"
+                        },
+                        {
+                            "position": "排桌椅",
+                            "student": "name5"
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-05-08",
+                    "assignments": [
+                        {
+                            "position": "中午扫地",
+                            "student": "name1"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name2"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name3"
+                        },
+                        {
+                            "position": "擦黑板",
+                            "student": "name4"
+                        },
+                        {
+                            "position": "排桌椅",
+                            "student": "name5"
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-05-09",
+                    "assignments": [
+                        {
+                            "position": "中午扫地",
+                            "student": "name1"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name2"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name3"
+                        },
+                        {
+                            "position": "擦黑板",
+                            "student": "name4"
+                        },
+                        {
+                            "position": "排桌椅",
+                            "student": "name5"
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-05-10",
+                    "assignments": [
+                        {
+                            "position": "中午扫地",
+                            "student": "name1"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name2"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name3"
+                        },
+                        {
+                            "position": "擦黑板",
+                            "student": "name4"
+                        },
+                        {
+                            "position": "排桌椅",
+                            "student": "name5"
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-05-11",
+                    "assignments": [
+                        {
+                            "position": "中午扫地",
+                            "student": "name1"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name2"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name3"
+                        },
+                        {
+                            "position": "擦黑板",
+                            "student": "name4"
+                        },
+                        {
+                            "position": "排桌椅",
+                            "student": "name5"
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-05-12",
+                    "assignments": [
+                        {
+                            "position": "中午扫地",
+                            "student": "name1"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name2"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name3"
+                        },
+                        {
+                            "position": "擦黑板",
+                            "student": "name4"
+                        },
+                        {
+                            "position": "排桌椅",
+                            "student": "name5"
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-05-13",
+                    "assignments": [
+                        {
+                            "position": "中午扫地",
+                            "student": "name1"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name2"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name3"
+                        },
+                        {
+                            "position": "擦黑板",
+                            "student": "name4"
+                        },
+                        {
+                            "position": "排桌椅",
+                            "student": "name5"
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-05-14",
+                    "assignments": [
+                        {
+                            "position": "中午扫地",
+                            "student": "name1"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name2"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name3"
+                        },
+                        {
+                            "position": "擦黑板",
+                            "student": "name4"
+                        },
+                        {
+                            "position": "排桌椅",
+                            "student": "name5"
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-05-15",
+                    "assignments": [
+                        {
+                            "position": "中午扫地",
+                            "student": "name1"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name2"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name3"
+                        },
+                        {
+                            "position": "擦黑板",
+                            "student": "name4"
+                        },
+                        {
+                            "position": "排桌椅",
+                            "student": "name5"
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-05-16",
+                    "assignments": [
+                        {
+                            "position": "中午扫地",
+                            "student": "name1"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name2"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name3"
+                        },
+                        {
+                            "position": "擦黑板",
+                            "student": "name4"
+                        },
+                        {
+                            "position": "排桌椅",
+                            "student": "name5"
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-05-17",
+                    "assignments": [
+                        {
+                            "position": "中午扫地",
+                            "student": "name1"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name2"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name3"
+                        },
+                        {
+                            "position": "擦黑板",
+                            "student": "name4"
+                        },
+                        {
+                            "position": "排桌椅",
+                            "student": "name5"
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-05-18",
+                    "assignments": [
+                        {
+                            "position": "中午扫地",
+                            "student": "name1"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name2"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name3"
+                        },
+                        {
+                            "position": "擦黑板",
+                            "student": "name4"
+                        },
+                        {
+                            "position": "排桌椅",
+                            "student": "name5"
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-05-19",
+                    "assignments": [
+                        {
+                            "position": "中午扫地",
+                            "student": "name1"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name2"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name3"
+                        },
+                        {
+                            "position": "擦黑板",
+                            "student": "name4"
+                        },
+                        {
+                            "position": "排桌椅",
+                            "student": "name5"
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-05-20",
+                    "assignments": [
+                        {
+                            "position": "中午扫地",
+                            "student": "name1"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name2"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name3"
+                        },
+                        {
+                            "position": "擦黑板",
+                            "student": "name4"
+                        },
+                        {
+                            "position": "排桌椅",
+                            "student": "name5"
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-05-21",
+                    "assignments": [
+                        {
+                            "position": "中午扫地",
+                            "student": "name1"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name2"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name3"
+                        },
+                        {
+                            "position": "擦黑板",
+                            "student": "name4"
+                        },
+                        {
+                            "position": "排桌椅",
+                            "student": "name5"
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-05-22",
+                    "assignments": [
+                        {
+                            "position": "中午扫地",
+                            "student": "name1"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name2"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name3"
+                        },
+                        {
+                            "position": "擦黑板",
+                            "student": "name4"
+                        },
+                        {
+                            "position": "排桌椅",
+                            "student": "name5"
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-05-23",
+                    "assignments": [
+                        {
+                            "position": "中午扫地",
+                            "student": "name1"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name2"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name3"
+                        },
+                        {
+                            "position": "擦黑板",
+                            "student": "name4"
+                        },
+                        {
+                            "position": "排桌椅",
+                            "student": "name5"
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-05-24",
+                    "assignments": [
+                        {
+                            "position": "中午扫地",
+                            "student": "name1"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name2"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name3"
+                        },
+                        {
+                            "position": "擦黑板",
+                            "student": "name4"
+                        },
+                        {
+                            "position": "排桌椅",
+                            "student": "name5"
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-05-25",
+                    "assignments": [
+                        {
+                            "position": "中午扫地",
+                            "student": "name1"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name2"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name3"
+                        },
+                        {
+                            "position": "擦黑板",
+                            "student": "name4"
+                        },
+                        {
+                            "position": "排桌椅",
+                            "student": "name5"
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-05-26",
+                    "assignments": [
+                        {
+                            "position": "中午扫地",
+                            "student": "name1"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name2"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name3"
+                        },
+                        {
+                            "position": "擦黑板",
+                            "student": "name4"
+                        },
+                        {
+                            "position": "排桌椅",
+                            "student": "name5"
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-05-27",
+                    "assignments": [
+                        {
+                            "position": "中午扫地",
+                            "student": "name1"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name2"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name3"
+                        },
+                        {
+                            "position": "擦黑板",
+                            "student": "name4"
+                        },
+                        {
+                            "position": "排桌椅",
+                            "student": "name5"
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-05-28",
+                    "assignments": [
+                        {
+                            "position": "中午扫地",
+                            "student": "name1"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name2"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name3"
+                        },
+                        {
+                            "position": "擦黑板",
+                            "student": "name4"
+                        },
+                        {
+                            "position": "排桌椅",
+                            "student": "name5"
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-05-29",
+                    "assignments": [
+                        {
+                            "position": "中午扫地",
+                            "student": "name1"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name2"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name3"
+                        },
+                        {
+                            "position": "擦黑板",
+                            "student": "name4"
+                        },
+                        {
+                            "position": "排桌椅",
+                            "student": "name5"
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-05-30",
+                    "assignments": [
+                        {
+                            "position": "中午扫地",
+                            "student": "name1"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name2"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name3"
+                        },
+                        {
+                            "position": "擦黑板",
+                            "student": "name4"
+                        },
+                        {
+                            "position": "排桌椅",
+                            "student": "name5"
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-05-31",
+                    "assignments": [
+                        {
+                            "position": "中午扫地",
+                            "student": "name1"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name2"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name3"
+                        },
+                        {
+                            "position": "擦黑板",
+                            "student": "name4"
+                        },
+                        {
+                            "position": "排桌椅",
+                            "student": "name5"
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-06-01",
+                    "assignments": [
+                        {
+                            "position": "中午扫地",
+                            "student": "name1"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name2"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name3"
+                        },
+                        {
+                            "position": "擦黑板",
+                            "student": "name4"
+                        },
+                        {
+                            "position": "排桌椅",
+                            "student": "name5"
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-06-02",
+                    "assignments": [
+                        {
+                            "position": "中午扫地",
+                            "student": "name1"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name2"
+                        },
+                        {
+                            "position": "晚上扫地",
+                            "student": "name3"
+                        },
+                        {
+                            "position": "擦黑板",
+                            "student": "name4"
+                        },
+                        {
+                            "position": "排桌椅",
+                            "student": "name5"
+                        }
+                    ]
+                }
+            ]
+        },
+        "test2": {
+            "positions": [],
+            "schedule": []
+        }
+    },
+    "borrowItems": {
+        "test1": [
+            {
+                "id": "1777900396531",
+                "name": "篮球",
+                "total": 5,
+                "records": []
+            }
+        ],
+        "test2": []
+    }
+}
