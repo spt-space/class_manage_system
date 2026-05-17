@@ -1,0 +1,58 @@
+.notification {
+    backdrop-filter: blur(2px);
+    box-shadow: var(--shadow-w-l);
+    font-family: 'fillet';
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 30px;
+    background: rgba(255, 255, 255, 0.95);
+    color: #333;
+    border-radius: 6px;
+    font-size: 16px;
+    opacity: 0;
+    z-index: 10000;
+    max-width: 180%;
+    text-align: center;
+}
+
+.slide-in {
+    animation: slideIn 0.5s ease forwards;
+}
+
+.slide-out {
+    animation: slideOut 0.5s forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 30px);
+    }
+
+    100% {
+        opacity: 0.9;
+        transform: translate(-50%, 5px);
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        opacity: 0.9;
+        transform: translate(-50%, 5px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -30px);
+    }
+}
+
+/* ==================== 深色模式 - 通知 ==================== */
+[data-theme="dark"] .notification {
+    background: rgba(30, 41, 59, 0.95);
+    color: #e2e8f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}

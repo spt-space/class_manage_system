@@ -1,0 +1,75 @@
+/* 加载动画 */
+.loader {
+    display: block;
+}
+
+.loader-bg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease;
+    width: 100%;
+    height: 100%;
+    background: #181818;
+    z-index: 9998;
+    display: block;
+}
+
+.loader-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 1200px;
+    max-height: 1200px;
+}
+
+.loader-an {
+    width: 200px;
+    height: 5px;
+    border-radius: 4px;
+    background: #404040;
+    position: relative;
+    overflow: hidden;
+}
+
+.loader-an::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #F6821F;
+    box-shadow: 0 0 10px 10px #F6821F;
+    animation: loaderan 1.5s ease-in-out infinite;
+}
+
+@keyframes loaderan {
+    0% {transform: translateX(-120px) translate(-50%,-50%);}
+    50% {transform: translateX(120px) translate(-50%,-50%);}
+    100% {transform: translateX(-120px) translate(-50%,-50%);}
+}
+
+.loader-text {
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 2;
+}
+
+#loader-status {
+    transition: all 0.2s linear;
+    opacity: 0;
+}
+
+/* ==================== 深色模式 - 加载 ==================== */
+[data-theme="dark"] .loader-bg {
+    background: #0f172a;
+}
+
+[data-theme="dark"] .loader-an {
+    background: #334155;
+}

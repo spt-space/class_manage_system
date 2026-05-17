@@ -1,0 +1,875 @@
+:root {
+    --primary-color: #3498db;
+    --primary-light: #e3f2fd;
+    --secondary-color: #2ecc71;
+    --accent-color: #e74c3c;
+    --light-color: #f9f9f9;
+    --dark-color: #2c3e50;
+    --border-color: #e1e5e9;
+    --shadow-light: 0 2px 8px rgba(0, 0, 0, 0.06);
+    --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow-heavy: 0 8px 24px rgba(0, 0, 0, 0.12);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --radius-sm: 6px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+}
+
+#page-knowledge iframe {
+    border: 2px solid rgba(0, 0, 0, 0);
+    outline: 2px solid #000000;
+}
+
+/* 首页样式 */
+#page-knowledge .home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0);
+}
+
+#page-knowledge .logo {
+    text-align: center;
+    margin-bottom: 50px;
+    max-width: 800px;
+}
+
+#page-knowledge .logo h1 {
+    font-size: 2.8rem;
+    background: linear-gradient(135deg, var(--dark-color) 0%, var(--primary-color) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+    letter-spacing: -0.5px;
+}
+
+#page-knowledge .logo p {
+    font-size: 1.1rem;
+    color: #5a9aaa;
+    line-height: 1.6;
+}
+
+#page-knowledge .subjects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+#page-knowledge .subject-btn {
+    font-family: "fillet";
+    background: white;
+    border: none;
+    border-radius: var(--radius-lg);
+    padding: 32px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: var(--shadow-light);
+    position: relative;
+    overflow: hidden;
+}
+
+#page-knowledge .subject-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    opacity: 0;
+    transition: var(--transition);
+}
+
+#page-knowledge .subject-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-heavy);
+}
+
+#page-knowledge .subject-btn:hover::before {
+    opacity: 1;
+}
+
+#page-knowledge .subject-btn i {
+    font-size: 2.8rem;
+    margin-bottom: 18px;
+}
+
+#page-knowledge .subject-btn h3 {
+    font-size: 1.3rem;
+    color: var(--dark-color);
+}
+
+#page-knowledge .instructions {
+    background: white;
+    padding: 20px 25px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-light);
+    max-width: 900px;
+    width: 100%;
+}
+
+#page-knowledge .instructions p {
+    margin: 8px 0;
+    color: #5a9aaa;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#page-knowledge .instructions i {
+    color: var(--primary-color);
+}
+
+#page-knowledge .chinese {
+    color: #e74c3c;
+}
+
+#page-knowledge .math {
+    color: #3498db;
+}
+
+#page-knowledge .english {
+    color: #2ecc71;
+}
+
+#page-knowledge .physics {
+    color: #9b59b6;
+}
+
+#page-knowledge .chemistry {
+    color: #e67e22;
+}
+
+/* 切换动画 */
+#page-knowledge .transition-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--dark-color) 100%);
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+#page-knowledge .transition-text {
+    color: white;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* 知识点页面 */
+#page-knowledge .knowledge-page {
+    display: none;
+    min-height: 100vh;
+}
+
+#page-knowledge .page-header {
+    display: flex;
+    align-items: center;
+    padding: 18px 25px;
+    background-color: white;
+    box-shadow: var(--shadow-light);
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+#page-knowledge .header-btns {
+    display: flex;
+    gap: 12px;
+}
+
+#page-knowledge .header-btn {
+    background-color: var(--light-color);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 1.1rem;
+    color: #5a9aaa;
+}
+
+#page-knowledge .header-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: scale(1.05);
+}
+
+#page-knowledge .subject-title {
+    margin-left: 25px;
+    font-size: 1.4rem;
+    color: var(--dark-color);
+}
+
+#page-knowledge .page-content {
+    display: flex;
+    height: calc(100vh - 76px);
+}
+
+/* 目录样式 - 美化 */
+#page-knowledge .directory-container {
+    width: 320px;
+    background-color: white;
+    border-right: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    transition: var(--transition);
+    overflow: hidden;
+}
+
+#page-knowledge .directory-container.hidden {
+    width: 0;
+    border-right: none;
+}
+
+#page-knowledge .directory-header {
+    padding: 20px 25px;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #f8fafc 0%, #e8f4f8 100%);
+}
+
+#page-knowledge .directory-header h3 {
+    color: var(--dark-color);
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+#page-knowledge .directory-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+#page-knowledge .folder {
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+#page-knowledge .folder-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: #f8fafc;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: var(--transition);
+    border: 1px solid #e8f4f8;
+}
+
+#page-knowledge .folder-header:hover {
+    background-color: #e8f4f8;
+    border-color: var(--border-color);
+}
+
+#page-knowledge .folder-name {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#page-knowledge .folder-name i {
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+#page-knowledge .folder-name span {
+    font-size: 0.85rem;
+    /* 字体变小 */
+    color: #1a202c;
+    /* 对比度增大，更深 */
+}
+
+#page-knowledge .folder-toggle {
+    color: #7ab8cc;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+#page-knowledge .folder-content {
+    padding-left: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    position: relative;
+    /* 为左侧线定位 */
+}
+
+/* 添加左侧线，显示嵌套层级 */
+#page-knowledge .folder-content::before {
+    content: '';
+    position: absolute;
+    left: 16px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: rgba(128, 128, 128, 1.0);
+    display: block;
+    opacity: 0.6;
+}
+
+#page-knowledge .folder-content.expanded {
+    height: auto;
+    max-height: 1000px;
+}
+
+/* 嵌套文件夹样式 - 更清晰的层级 */
+#page-knowledge .folder .folder {
+    margin-bottom: 0px;
+}
+
+#page-knowledge .folder .folder .folder-header {
+    background-color: #e8f4f8;
+    padding: 8px 16px;
+}
+
+#page-knowledge .folder .folder .folder-name {
+    font-size: 0.9rem;
+}
+
+#page-knowledge .folder .folder .folder-name i {
+    font-size: 0.9rem;
+}
+
+#page-knowledge .folder .folder .folder-content {
+    padding-left: 16px;
+}
+
+/* 知识点项目 */
+#page-knowledge .knowledge-item {
+    padding: 8px 16px;
+    margin: 6px 0;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.8rem;
+    /* 字体变小 */
+    color: #2d3748;
+    /* 对比度增大，更深 */
+    border: 1px solid transparent;
+    line-height: 1.5;
+}
+
+#page-knowledge .knowledge-item:hover {
+    background-color: #f1f7ff;
+    border-color: #dbeafe;
+    color: var(--primary-color);
+}
+
+#page-knowledge .knowledge-item.active {
+    background-color: var(--primary-light);
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+#page-knowledge .knowledge-item i {
+    font-size: 0.85rem;
+}
+
+/* 知识点内容区域 */
+#page-knowledge .knowledge-content {
+    flex: 1;
+    padding: 30px 40px;
+    overflow-y: auto;
+    background-color: #f8fafc;
+    transition: var(--transition);
+}
+
+#page-knowledge .knowledge-content.fullscreen {
+    padding: 40px 60px;
+}
+
+#page-knowledge .content-title {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    color: var(--dark-color);
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--primary-color);
+    line-height: 1.3;
+}
+
+#page-knowledge .content-body {
+    line-height: 1.8;
+}
+
+#page-knowledge .content-section {
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 30px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-light);
+    border: 1px solid var(--border-color);
+}
+
+#page-knowledge .content-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--dark-color);
+}
+
+#page-knowledge .content-section p {
+    margin-bottom: 18px;
+    font-size: 1.05rem;
+    color: #1e869b;
+}
+
+#page-knowledge .content-section ul,
+#page-knowledge .content-section ol {
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+#page-knowledge .content-section li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+    color: #1e869b;
+}
+
+#page-knowledge .formula {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: var(--radius-md);
+    margin: 20px 0;
+    text-align: center;
+    font-size: 1.3rem;
+    border-left: 4px solid var(--primary-color);
+}
+
+#page-knowledge .example {
+    background-color: #fff8e1;
+    border-left: 4px solid #ffc107;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: var(--radius-md);
+}
+
+/* 加载动画 */
+#page-knowledge .loader {
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top: 3px solid rgba(255, 255, 255, 1.0);
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#page-knowledge .fade-in {
+    animation: fadeIn 0.5s ease;
+}
+
+/* 手机端样式 */
+@media (max-width: 768px) {
+    #page-knowledge .subjects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    #page-knowledge .page-content {
+        flex-direction: column;
+    }
+
+    #page-knowledge .directory-container {
+        width: 100%;
+        height: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 500;
+        overflow: hidden;
+        box-shadow: var(--shadow-heavy);
+    }
+
+    #page-knowledge .directory-container.mobile-open {
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+    #page-knowledge .knowledge-content {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #page-knowledge .subject-btn {
+        padding: 25px 15px;
+    }
+
+    #page-knowledge .subject-btn i {
+        font-size: 2.2rem;
+    }
+
+    #page-knowledge .subject-btn h3 {
+        font-size: 1.1rem;
+    }
+
+    #page-knowledge .logo h1 {
+        font-size: 2rem;
+    }
+
+    #page-knowledge .content-title {
+        font-size: 1.8rem;
+    }
+
+    #page-knowledge .content-section {
+        padding: 20px;
+    }
+
+    #page-knowledge .knowledge-content.fullscreen {
+        padding: 20px;
+    }
+
+    #page-knowledge .instructions {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #page-knowledge .subjects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #page-knowledge .logo h1 {
+        font-size: 1.8rem;
+    }
+
+    #page-knowledge .subject-btn i {
+        font-size: 2rem;
+    }
+
+    #page-knowledge .content-title {
+        font-size: 1.6rem;
+    }
+
+    #page-knowledge .content-section {
+        padding: 15px;
+    }
+}
+
+/* 空状态 */
+#page-knowledge .empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #7ab8cc;
+}
+
+#page-knowledge .empty-state i {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+#page-knowledge .empty-state h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #5a9aaa;
+}
+
+/* LaTeX/MathJax 样式 - 不收缩，正常显示 */
+.katex {
+    font-size: 1.1em;
+    line-height: 1.4;
+}
+
+.katex-display {
+    margin: 1em 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.katex-display .katex {
+    font-size: 1.15em;
+}
+
+/* 确保LaTeX内容不被截断 */
+.latex-content .katex,
+.preview-content .katex {
+    white-space: nowrap;
+}
+
+/* 使用!important覆盖 */
+mjx-container,
+mjx-math,
+.MJX-TEX,
+.MathJax,
+.MathJax_CHTML,
+.MathJax_SVG,
+.mjx-chtml,
+.mjx-math,
+[class*="MJXc-"] {
+    font-family: MJXc-TeX-math-I, MJXc-TeX-main-R,
+        'STIX Two Math', 'Latin Modern Math', 'Cambria Math',
+        'Libertinus Math', serif !important;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    white-space: nowrap;
+}
+
+/* ==================== 深色模式 - 知识集合 ==================== */
+[data-theme="dark"] #page-knowledge .home-page {
+    background: transparent;
+}
+
+[data-theme="dark"] #page-knowledge .logo h1 {
+    background: linear-gradient(135deg, #e8f4f8 0%, #93c5fd 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+[data-theme="dark"] #page-knowledge .logo p {
+    color: #7ab8cc;
+}
+
+[data-theme="dark"] #page-knowledge .subject-btn {
+    background: rgba(30, 56, 88, 0.9);
+    border: 1px solid rgba(30, 134, 155, 0.15);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+[data-theme="dark"] #page-knowledge .subject-btn:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+    border-color: rgba(96, 165, 250, 0.25);
+}
+
+[data-theme="dark"] #page-knowledge .subject-btn h3 {
+    color: #e8f4f8;
+}
+
+[data-theme="dark"] #page-knowledge .instructions {
+    background: rgba(30, 56, 88, 0.9);
+    border: 1px solid rgba(30, 134, 155, 0.15);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+[data-theme="dark"] #page-knowledge .instructions p {
+    color: #7ab8cc;
+}
+
+[data-theme="dark"] #page-knowledge .page-header {
+    background-color: rgba(24, 22, 48, 0.95);
+    border-bottom: 1px solid #1e869b;
+}
+
+[data-theme="dark"] #page-knowledge .header-btn {
+    background-color: #1e3858;
+    color: #7ab8cc;
+    border: 1px solid rgba(30, 134, 155, 0.2);
+}
+
+[data-theme="dark"] #page-knowledge .header-btn:hover {
+    background-color: #3b82f6;
+    color: white;
+    border-color: #3b82f6;
+}
+
+[data-theme="dark"] #page-knowledge .subject-title {
+    color: #e8f4f8;
+}
+
+[data-theme="dark"] #page-knowledge .directory-container {
+    background-color: rgba(24, 22, 48, 0.95);
+    border-right: 1px solid #1e869b;
+}
+
+[data-theme="dark"] #page-knowledge .directory-header {
+    background: linear-gradient(135deg, #181630 0%, #1e3858 100%);
+    border-bottom: 1px solid #1e869b;
+}
+
+[data-theme="dark"] #page-knowledge .directory-header h3 {
+    color: #e8f4f8;
+}
+
+[data-theme="dark"] #page-knowledge .folder-header {
+    background-color: #1e3858;
+    border: 1px solid #1e869b;
+}
+
+[data-theme="dark"] #page-knowledge .folder-header:hover {
+    background-color: #195e7d;
+    border-color: #5a9aaa;
+}
+
+[data-theme="dark"] #page-knowledge .folder-name span {
+    color: #e8f4f8;
+}
+
+[data-theme="dark"] #page-knowledge .folder-toggle {
+    color: #5a9aaa;
+}
+
+[data-theme="dark"] #page-knowledge .folder-content::before {
+    background-color: #1e869b;
+}
+
+[data-theme="dark"] #page-knowledge .folder .folder .folder-header {
+    background-color: #1e3858;
+    border-color: #1e869b;
+}
+
+[data-theme="dark"] #page-knowledge .knowledge-item {
+    color: #a8d4e6;
+    border: 1px solid transparent;
+}
+
+[data-theme="dark"] #page-knowledge .knowledge-item:hover {
+    background-color: #1e3858;
+    border-color: #1e869b;
+    color: #93c5fd;
+}
+
+[data-theme="dark"] #page-knowledge .knowledge-item.active {
+    background-color: rgba(96, 165, 250, 0.1);
+    color: #93c5fd;
+    border-color: #3b82f6;
+}
+
+[data-theme="dark"] #page-knowledge .knowledge-content {
+    background-color: #181630;
+}
+
+[data-theme="dark"] #page-knowledge .content-title {
+    color: #e8f4f8;
+    border-bottom: 2px solid #3b82f6;
+}
+
+[data-theme="dark"] #page-knowledge .content-section {
+    background-color: rgba(30, 56, 88, 0.9);
+    border: 1px solid #1e869b;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+[data-theme="dark"] #page-knowledge .content-section h3 {
+    color: #e8f4f8;
+}
+
+[data-theme="dark"] #page-knowledge .content-section p,
+[data-theme="dark"] #page-knowledge .content-section li {
+    color: #7ab8cc;
+}
+
+[data-theme="dark"] #page-knowledge .formula {
+    background-color: #1e3858;
+    border-left: 4px solid #3b82f6;
+    color: #e8f4f8;
+}
+
+[data-theme="dark"] #page-knowledge .example {
+    background-color: #451a03;
+    border-left: 4px solid #d97706;
+    color: #fde68a;
+}
+
+[data-theme="dark"] #page-knowledge .empty-state {
+    color: #5a9aaa;
+}
+
+[data-theme="dark"] #page-knowledge .empty-state h3 {
+    color: #7ab8cc;
+}
+
+[data-theme="dark"] #page-knowledge iframe {
+    outline: 2px solid #1e869b;
+}
+
+@media (max-width: 768px) {
+    [data-theme="dark"] #page-knowledge .directory-container {
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+    }
+}
+
+
+/* 修复深色模式下公式颜色 */
+[data-theme="dark"] #page-knowledge .formula {
+    background-color: #1e3858;
+    border-left: 4px solid #3b82f6;
+    color: #d4e8f0;
+}
+
+/* 修复深色模式下知识点内容 */
+[data-theme="dark"] #page-knowledge .knowledge-item {
+    color: #a8d4e6;
+}
+
+[data-theme="dark"] #page-knowledge .knowledge-item:hover {
+    background-color: #1e3858;
+    border-color: #1e869b;
+    color: #93c5fd;
+}
+
+[data-theme="dark"] #page-knowledge .knowledge-item.active {
+    background-color: rgba(96, 165, 250, 0.15);
+    color: #93c5fd;
+    border-color: #3b82f6;
+}
+
+/* 修复深色模式下目录 */
+[data-theme="dark"] #page-knowledge .directory-container {
+    background-color: rgba(24, 22, 48, 0.98);
+    border-right: 1px solid #195e7d;
+}
+
+/* 修复深色模式下内容区 */
+[data-theme="dark"] #page-knowledge .knowledge-content {
+    background-color: #181630;
+}
+
+/* 修复深色模式下章节卡片 */
+[data-theme="dark"] #page-knowledge .content-section {
+    background-color: rgba(30, 56, 88, 0.95);
+    border: 1px solid #195e7d;
+}
+
+[data-theme="dark"] #page-knowledge .content-section h3 {
+    color: #e8f4f8;
+}
+
+[data-theme="dark"] #page-knowledge .content-section p,
+[data-theme="dark"] #page-knowledge .content-section li {
+    color: #a8d4e6;
+}
